@@ -9,6 +9,7 @@ $(document).ready(function (){
     imgObj.onload = function() {
         console.log('img chargée');
         context.drawImage(imgObj, 0, 0, canvas.width(), canvas.height());
+        $('#erasable-canvas').eraser();
     };
     imgObj.src = "../img/erasable.jpg";
 });
