@@ -157,7 +157,7 @@
             });
           }
 
-          if (this.complete && this.naturalWidth > 0) {
+          if ((this.complete && this.naturalWidth > 0) || this instanceof HTMLCanvasElement) {
             handleImage();
           } else {
             //this.onload = handleImage;
